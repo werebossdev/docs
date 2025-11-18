@@ -1,148 +1,92 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>用户协议与保密协议</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>测试须知</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(140deg, #f5f8fc, #e1e8f2);
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter',sans-serif;
+  background:linear-gradient(140deg,#f6fafc,#e9f1f8);
+  display:flex;justify-content:center;padding:36px 18px;min-height:100vh;
 }
-
-.agreement {
-  max-width: 900px;
-  width: 100%;
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(18px) saturate(160%);
-  border-radius: 28px;
-  padding: 50px 45px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.08), 0 0 25px rgba(255,255,255,0.08) inset;
-  animation: floatCard 6s ease-in-out infinite alternate;
+.card{
+  width:100%;max-width:900px;background:rgba(255,255,255,0.92);
+  border-radius:20px;padding:36px;box-shadow:0 18px 40px rgba(10,30,60,0.08);
 }
-
-@keyframes floatCard {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0px); }
+h1{
+  font-size:2rem;margin-bottom:14px;color:#0f1724;
+  text-align:center;letter-spacing:1px;
 }
-
-h1 {
-  font-size: 2.3rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 50px;
-  color: #1c1c1c;
+.subtitle{
+  text-align:center;color:#5b6b77;font-size:0.95rem;margin-bottom:20px;
 }
-
-h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-top: 35px;
-  margin-bottom: 18px;
-  color: #1c1c1c;
+h2{font-size:1.2rem;margin-top:20px;margin-bottom:10px;color:#0f1724}
+p,li{color:#24303b;line-height:1.7;font-size:1rem}
+ol{padding-left:22px;margin-bottom:14px}
+.hr{
+  height:1px;background:linear-gradient(90deg,#e6eef8,#f3f7fb);
+  margin:24px 0;border-radius:2px
 }
-
-p, li {
-  font-size: 1rem;
-  line-height: 1.9;
-  color: #333;
+.footer{
+  margin-top:24px;color:#5b6b77;font-size:0.95rem;text-align:center;
 }
-
-ol { padding-left: 26px; margin-bottom: 18px; }
-
-.section { margin-bottom: 30px; transition: all 0.3s ease; }
-
-.section:hover { box-shadow: inset 0 0 12px rgba(0,0,0,0.02); }
-
-@media(max-width: 600px) {
-  .agreement { padding: 35px 20px; }
-  h1 { font-size: 1.9rem; margin-bottom: 40px; }
-  h2 { font-size: 1.2rem; margin-top: 28px; margin-bottom: 12px; }
-  p, li { font-size: 0.95rem; }
+@media(max-width:640px){
+  .card{padding:22px}
+  h1{font-size:1.7rem}
 }
 </style>
 </head>
+
 <body>
-  <div class="agreement">
-    <h1>用户协议与保密协议</h1>
+<div class="card">
 
-    <div class="section">
-      <p>欢迎参与游戏测试！请在继续前仔细阅读以下条款：</p>
-    </div>
+  <h1>测试须知</h1>
+  <p class="subtitle">欢迎参加本次游戏测试，请在开始体验前阅读以下内容。</p>
 
-    <div class="section">
-      <h2>一、测试说明</h2>
-      <ol>
-        <li>游戏为测试版本，仅用于功能体验、优化及反馈。</li>
-        <li>测试版本可能存在 Bug、性能不稳定、AI 异常或语音延迟。</li>
-        <li>游戏功能、虚拟物品及账号数据可能随时调整或清除。</li>
-      </ol>
-    </div>
+  <div class="hr"></div>
 
-    <div class="section">
-      <h2>二、保密义务</h2>
-      <ol>
-        <li>测试期间涉及的游戏玩法、职业、地图、数值、界面设计、即时语音系统、LLM 模型及 TTS 语音内容等信息，必须严格保密。</li>
-        <li>不得在社交媒体、直播、论坛、群组或其他渠道公开或传播。</li>
-        <li>游戏画面内含与您账户绑定的可见及不可见水印。禁止任何移除或遮盖行为。</li>
-        <li>保密义务在测试结束后仍然有效，直至该游戏正式对外公开发布之日止。</li>
-      </ol>
-    </div>
+  <h2>一、关于本次测试</h2>
+  <ol>
+    <li>当前版本处于开发阶段，可能存在 Bug、性能波动或未完成内容。</li>
+    <li>玩法、职业、界面、地图与数值均可能在后续版本中调整。</li>
+  </ol>
 
-    <div class="section">
-      <h2>三、语音与 AI 数据使用</h2>
-      <ol>
-        <li>游戏可能采集语音通话、TTS 输出内容、AI 对话记录及操作日志，仅用于优化语音系统、AI 模型、游戏平衡及反作弊。</li>
-        <li>数据加密存储，仅限内部使用，不会出售或提供给第三方。</li>
-        <li>请避免在语音或 AI 交互中输入敏感个人信息（如身份证号、住址、联系方式）。</li>
-      </ol>
-    </div>
+  <h2>二、保密提示</h2>
+  <ol>
+    <li>为避免未完成内容被误解，请不要将测试内容上传至公开平台（如 B 站、抖音、小红书、微博、贴吧等）。</li>
+    <li>您可以在测试群内交流或与熟悉的朋友讨论体验。</li>
+    <li>测试版本可能包含用于识别的可见或不可见水印。</li>
+  </ol>
 
-    <div class="section">
-      <h2>四、行为规范</h2>
-      <ol>
-        <li>遵守法律法规及 Steam 平台规则。</li>
-        <li>不得通过语音或 AI 系统发布违法、暴力、色情、恐怖、歧视或政治敏感内容。</li>
-        <li>不得使用外挂、抓包、逆向工程、破坏服务器或篡改客户端。</li>
-        <li>不得传播、分享、出售或公开展示测试内容或保密信息。</li>
-      </ol>
-    </div>
+  <h2>三、语音与 AI 功能说明</h2>
+  <ol>
+    <li>游戏可能采集语音、TTS 输出、AI 对话记录与操作日志，用于改进体验与检测异常行为。</li>
+    <li>这些数据仅用于内部分析，不会出售给第三方。</li>
+    <li>请避免在语音或 AI 输入中提供个人敏感信息。</li>
+  </ol>
 
-    <div class="section">
-      <h2>五、知识产权</h2>
-      <ol>
-        <li>游戏及所有内容、程序、音频、文本、图像、AI 模型、语音系统、TTS 输出归开发方所有。</li>
-        <li>玩家在测试期间提交的反馈、语音或文字内容，开发方可无偿使用、修改、展示或发布。</li>
-      </ol>
-    </div>
+  <h2>四、玩家行为规范</h2>
+  <ol>
+    <li>请遵守法律法规与 Steam 平台相关规则。</li>
+    <li>请勿发布违法、暴力、色情、恐怖或不当内容。</li>
+    <li>请勿使用外挂、抓包、逆向、攻击服务器或传播测试安装包。</li>
+  </ol>
 
-    <div class="section">
-      <h2>六、法律适用与争议解决</h2>
-      <ol>
-        <li>本协议受中华人民共和国法律管辖。</li>
-        <li>如有争议，请先友好协商；协商不成，可向开发方所在地人民法院提起诉讼。</li>
-      </ol>
-    </div>
+  <h2>五、反馈使用说明</h2>
+  <ol>
+    <li>您在测试期间提交的意见、建议、语音或文本内容，可能用于优化游戏与后续开发。</li>
+  </ol>
 
-    <div class="section">
-      <h2>七、同意与确认</h2>
-      <p>通过在 Steam 平台使用您的测试序列号激活游戏，即视为您已：</p>
-      <ol>
-        <li>已阅读、理解并同意本协议全部条款；</li>
-        <li>同意在测试期间收集、使用、存储、处理语音和 AI 数据；</li>
-        <li>承诺遵守保密及行为规范义务。</li>
-      </ol>
-    </div>
+  <h2>六、同意方式</h2>
+  <p>当您在 Steam 使用测试序列号激活游戏时，即视为已阅读并同意以上测试须知。</p>
 
-  </div>
+  <div class="hr"></div>
+
+  <p class="footer">感谢参与，祝您测试愉快！</p>
+
+</div>
 </body>
 </html>
